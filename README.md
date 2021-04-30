@@ -1,4 +1,4 @@
-Welcome to WINTRE (Windows-MITRE) Adversary Simulation Tool!
+Welcome to WINTRE (Windows-MITRE) Adversary Simulation Tool! Please download the latest release to run the tool.
 
 REQUIREMENTS:
 <br>-WINTRE is built using the .NET framework, all editions of Windows 10 include the .NET framework 4.6 installed by default. If you wish to run the application on an older OS (Windows 7), 
