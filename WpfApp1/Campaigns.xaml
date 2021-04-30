@@ -1,0 +1,43 @@
+﻿<Page x:Class="WpfApp1.Page5"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1054"
+      Title="Page5">
+
+    <Grid Background="#FF1F1C1C">
+        <TabControl x:Name="CampaignTabs" HorizontalAlignment="Left" Height="688" VerticalAlignment="Top" Width="1054" Background="#FF4B4B4B" BorderBrush="#FF4B4B4B">
+            <TabItem Header="Create Campaign" Background="#FF4B4B4B" Foreground="#FFACACAC">
+                <Grid Background="#FF1F1C1C">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="352*"/>
+                        <ColumnDefinition Width="663*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="clearCampaignFields" Content="Clear Fields" HorizontalAlignment="Left" Margin="158,106,0,0" VerticalAlignment="Top" Width="112" Click="ClearCampaignFields_Click" Grid.Column="1" Background="#FF4B4B4B" Foreground="#FFACACAC" Height="24"/>
+                    <Button x:Name="SelectTechniquesForCampaign" Content="Add Technique" HorizontalAlignment="Left" Margin="158.5,335,0,0" VerticalAlignment="Top" Width="112" Click="SelectTechniquesForCampaign_Click" Grid.Column="1" Foreground="#FFACACAC" Background="#FF4B4B4B" Height="24"/>
+                    <Label Content="Campaign Title:" HorizontalAlignment="Left" Margin="31,46,0,0" VerticalAlignment="Top" Foreground="#FF2887B8" FontSize="16"/>
+                    <Label Content="Campaign Description:" HorizontalAlignment="Left" Margin="31,164,0,0" VerticalAlignment="Top" Foreground="#FF2887B8" FontSize="16"/>
+                    <Label Content="Techniques Summary:" HorizontalAlignment="Left" Margin="158,379,0,0" VerticalAlignment="Top" Foreground="#FF2887B8" Grid.Column="1" FontSize="16"/>
+                    <Label Content="Tactics Summary:" HorizontalAlignment="Left" Margin="31,379,0,0" VerticalAlignment="Top" Foreground="#FF2887B8" FontSize="16"/>
+                    <Button x:Name="SaveCampaign" Content="Save Campaign" HorizontalAlignment="Left" Margin="158,77,0,0" VerticalAlignment="Top" Width="111" Grid.Column="1" Background="#FF4B4B4B" Foreground="#FFACACAC" Height="24" Click="SaveCampaign_Click"/>
+                    <TextBox x:Name="CampaignTitle" HorizontalAlignment="Left" Height="67" Margin="31,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="429" Grid.ColumnSpan="2" Background="#FF4B4B4B" Foreground="#FFA3A3A3" BorderBrush="#FF4B4B4B"/>
+                    <TextBox x:Name="CampaignDesc" HorizontalAlignment="Left" Height="164" Margin="31,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="429" Grid.ColumnSpan="2" Background="#FF4B4B4B" Foreground="#FFA3A3A3" BorderBrush="#FF4B4B4B"/>
+                    <ComboBox x:Name="SelectedTactic" HorizontalAlignment="Left" Margin="158.5,195,0,0" VerticalAlignment="Top" Width="428" Height="28" Grid.Column="1"/>
+                    <ComboBox x:Name="SelectedTechnique" HorizontalAlignment="Left" Margin="158.5,259,0,0" VerticalAlignment="Top" Width="428" Height="28" DropDownOpened="LoadTechniques" Grid.Column="1"/>
+                    <Label Content="1. Select tactic:" HorizontalAlignment="Left" Margin="158.5,164,0,0" VerticalAlignment="Top" Foreground="#FF2887B8" Grid.Column="1" FontSize="16"/>
+                    <Label Content="2. Select technique:" HorizontalAlignment="Left" Margin="158.5,228,0,0" VerticalAlignment="Top" Foreground="#FF2887B8" Grid.Column="1" FontSize="16"/>
+                    <TextBlock x:Name="TacticsSummary" HorizontalAlignment="Left" Margin="31,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="240" Width="429" Background="#FF4B4B4B" Grid.ColumnSpan="2" Foreground="#FFA3A3A3"/>
+                    <TextBlock x:Name="TechniquesSummary" HorizontalAlignment="Left" Margin="158,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="240" Width="429" Background="#FF4B4B4B" Grid.Column="1" Foreground="#FFA3A3A3"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="View Campaigns" Background="#FF4B4B4B" Foreground="#FFACACAC" MouseLeftButtonUp="Reload">
+                <Grid Background="#FF1F1C1C">
+                    <Label Content="Double click the campaign you'd like to run to load its techniques into the queue:" HorizontalAlignment="Left" Margin="10,12,0,0" VerticalAlignment="Top" Foreground="#FF2887B8" FontSize="16" Cursor=""/>
+                    <DataGrid x:Name="Campaigns" SelectionMode="Single" HorizontalAlignment="Left" Height="601" Margin="10,49,0,0" VerticalAlignment="Top" Width="1012" Background="#FF4B4B4B" AlternatingRowBackground="#FF4B4B4B" RowBackground="#FF606060" AlternationCount="2" MouseDoubleClick="LoadCampaignIntoQueue"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Page>

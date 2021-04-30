@@ -1,0 +1,22 @@
+﻿<Page x:Class="WpfApp1.Page4"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1054"
+      Title="Page4">
+
+    <Grid Background="#FF1F1C1C">
+        <CheckBox Content="Enable Reporting" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="30" Width="145" FontSize="16" Checked="EnableReporting" Foreground="#FF2887B8"/>
+        <TextBox x:Name="ReportTitle" HorizontalAlignment="Left" Height="32" Margin="393,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" FontSize="16" Background="#FF4B4B4B" BorderBrush="#FF4B4B4B" Foreground="#FFA3A3A3"/>
+        <TextBox x:Name="ReportDesc" HorizontalAlignment="Left" Height="111" Margin="759,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="271" Background="#FF4B4B4B" BorderBrush="#FF4B4B4B" Foreground="#FFA3A3A3"/>
+        <Label Content="Report Title:" HorizontalAlignment="Left" Margin="294,13,0,0" VerticalAlignment="Top" Foreground="#FF2887B8" FontSize="16"/>
+        <Label Content="Report Description:" HorizontalAlignment="Left" Margin="613,13,0,0" VerticalAlignment="Top" Foreground="#FF2887B8" FontSize="16"/>
+        <!--<Button x:Name="DeleteReport" Content="Delete Report" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Width="160" Height="30" FontSize="16" Foreground="#FFACACAC" Background="#FF4B4B4B" Click="DeleteReport_Click"/>-->
+        <Button x:Name="ExportReport" Content="Save Report" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top" Width="160" Height="30" FontSize="16" Click="ExportReportClick" Foreground="#FFACACAC" Background="#FF4B4B4B"/>
+        <Button x:Name="Generate_Preview" Content="Generate/Refresh Preview" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Width="196" Height="30" FontSize="16" Click="GeneratePreview_Click" Foreground="#FFACACAC" Background="#FF4B4B4B"/>
+        <DocumentViewer x:Name="DocPreview" HorizontalAlignment="Left" Margin="10,126,0,0" VerticalAlignment="Top" Height="569" Width="1020" Background="#FFA3A3A3"/>
+    </Grid>
+</Page>

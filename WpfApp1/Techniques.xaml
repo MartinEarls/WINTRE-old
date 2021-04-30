@@ -1,0 +1,110 @@
+﻿<Page x:Class="WpfApp1.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1054"
+      Title="Techniques">
+
+    <Grid x:Name="TechGrid"  Background="#FF1F1C1C" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <TabControl x:Name="Tabs" HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="1054" Background="{x:Null}" SelectionChanged="LoadTechniques">
+            <TabItem x:Name="CodeExecution" Header="Code Execution" Background="#FF4B4B4B" Foreground="#FFACACAC">
+                <StackPanel>
+                    <Label Content="Select from Code Execution Techniques:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="16" Foreground="#FF2887B8" FontFamily="Verdana"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Persistence" Background="#FF4B4B4B" Foreground="#FFACACAC">
+                <StackPanel>
+                    <Label Content="Select from Persistence Techniques:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="16" Foreground="#FF2887B8" FontFamily="Verdana"/>
+
+                </StackPanel>
+            </TabItem>
+            <!--<TabItem Header="Privilege Escalation" Background="#FF4B4B4B" Foreground="#FFACACAC">
+                <StackPanel>
+                    <Label Content="Select from Privilege Escalation Techniques:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="16" Foreground="#FF2887B8" FontFamily="Verdana"/>
+
+                </StackPanel>
+            </TabItem>-->
+            <TabItem Header="Defence Evasion" FontFamily="Verdana" Background="#FF4B4B4B" Foreground="#FFACACAC">
+                <StackPanel>
+                    <Label Content="Select from Defence Evasion Techniques:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="16" Foreground="#FF2887B8"/>
+
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Credential Theft" Background="#FF4B4B4B" Foreground="#FFACACAC">
+                <StackPanel>
+                    <Label Content="Select from Credential Theft Techniques:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="16" Foreground="#FF2887B8" FontFamily="Verdana"/>
+
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Discovery" Background="#FF4B4B4B" Foreground="#FFACACAC">
+                <StackPanel>
+                    <Label Content="Select from Discovery Techniques:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="16" Foreground="#FF2887B8" FontFamily="Verdana"/>
+
+                </StackPanel>
+            </TabItem>
+            <!--<TabItem Header="Lateral Movement" Background="#FF4B4B4B" Foreground="#FFACACAC">
+                <StackPanel>
+                    <Label Content="Select from Lateral Movement Techniques:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="16" Foreground="#FF2887B8" FontFamily="Verdana"/>
+
+                </StackPanel>
+            </TabItem>-->
+            <TabItem Header="Collection" FontFamily="Verdana" Background="#FF4B4B4B" Foreground="#FFACACAC">
+                <StackPanel>
+                    <Label Content="Select from Collection Techniques:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="16" Foreground="#FF2887B8"/>
+
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Data Exfiltration" Background="#FF4B4B4B" Foreground="#FFACACAC">
+                <StackPanel>
+                    <Label Content="Select from Data Exfiltration Techniques:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="16" Foreground="#FF2887B8" FontFamily="Verdana"/>
+
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Command and Control" Background="#FF4B4B4B" Foreground="#FFACACAC">
+                <StackPanel>
+                    <Label Content="Select from Command and Control Techniques:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="16" Foreground="#FF2887B8" FontFamily="Verdana"/>
+
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Impact" Background="#FF4B4B4B" Foreground="#FFACACAC">
+                <StackPanel>
+                    <Label Content="Select from Impact Techniques:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" FontSize="16" Foreground="#FF2887B8" FontFamily="Verdana"/>
+                </StackPanel>
+            </TabItem>
+
+        </TabControl>
+        <ScrollViewer HorizontalAlignment="Stretch" Height="239" Margin="0,450,0,0" VerticalAlignment="Top" Width="1044" Background="Black">
+            <Border BorderThickness="3" BorderBrush="DarkSlateGray">
+                <TextBox x:Name="LogOutput" x:FieldModifier="public" TextWrapping="Wrap" Foreground="#FFFBFF00" Background="Black" IsReadOnly="True"/>
+            </Border>
+        </ScrollViewer>
+
+        <Button x:Name="ButtonRunTest" Content="Run Selected Test" HorizontalAlignment="Left" VerticalAlignment="Top" Width="186" Margin="434,42,0,0" FontSize="16" Height="31" Click="ButtonClickRunTest" Foreground="#FFACACAC" Background="#FF4B4B4B" BorderBrush="#FF6D6D6D"/>
+        <Button Content="Add Selection to Queue" HorizontalAlignment="Left" VerticalAlignment="Top" Width="186" Margin="434,135,0,0" FontSize="16" Height="31" Background="#FF4B4B4B" Foreground="#FFACACAC" Visibility="Hidden"/>
+        <Label Content="ID:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,160,0,0" FontSize="16" Foreground="#FF2887B8" FontFamily="Verdana"/>
+        <Label Content="Elevated Privileges:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,191,0,0" FontSize="16" Height="31" Foreground="#FF2887B8" FontFamily="Verdana"/>
+        <ComboBox x:Name="ComboBoxTechniques" Margin="10,64,691.714,0" Height="31" VerticalAlignment="Top" Visibility="Visible" SelectionChanged="TestSelected" FontFamily="Verdana" FontSize="14" Foreground="Black" Background="#FF4B4B4B" BorderBrush="#FF707070"/>
+        <Button Content="Remove from Queue" HorizontalAlignment="Left" VerticalAlignment="Top" Width="186" Margin="434,166,0,0" FontSize="16" Height="31" Background="#FF4B4B4B" Foreground="#FFACACAC" Visibility="Hidden"/>
+        <Button x:Name="ClearPayloads" Content="Clear Payloads" HorizontalAlignment="Left" VerticalAlignment="Top" Width="186" Margin="434,73,0,0" FontSize="16" Height="31" Click="ClearPayloadsClick" Background="#FF4B4B4B" Foreground="#FFACACAC"/>
+        <Label Content="Description:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,222,0,0" FontSize="16" Height="31" Foreground="#FF2887B8" FontFamily="Verdana"/>
+        <Label Content="Technique Arguments:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,374,0,0" FontSize="16" Height="31" Foreground="#FF2887B8" FontFamily="Verdana"/>
+        <!--<TextBlock x:Name="valueID" HorizontalAlignment="Left" Margin="46,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" FontSize="16" Foreground="#FFACACAC"/>-->
+        <TextBlock x:Name="valueID" HorizontalAlignment="Left" Margin="46,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" FontSize="16" Foreground="#FFACACAC" Height="21">
+                <Grid x:Name="IDGrid" Height="21" Width="99"/>
+        </TextBlock>
+        <TextBlock x:Name="valuePrivs" HorizontalAlignment="Left" Margin="180,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" FontSize="16" Foreground="#FFACACAC"/>
+        <TextBlock x:Name="valueDesc" HorizontalAlignment="Left" Margin="122,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="911" Foreground="#FFACACAC" FontSize="16"/>
+        <Label Content="Argument 1:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="712,338,0,0" FontSize="16" Height="31" Foreground="#FF2887B8" FontFamily="Verdana"/>
+        <Label Content="Argument 2:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="712,369,0,0" FontSize="16" Height="31" Foreground="#FF2887B8" FontFamily="Verdana"/>
+        <Label Content="Argument 3:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="712,400,0,0" FontSize="16" Height="31" Foreground="#FF2887B8" FontFamily="Verdana"/>
+        <TextBlock x:Name="arg1" Text="" HorizontalAlignment="Left" Margin="827,343,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" FontSize="16" Foreground="#FFACACAC"/>
+        <TextBlock x:Name="arg2" Text="" HorizontalAlignment="Left" Margin="827,374,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" FontSize="16" Foreground="#FFACACAC"/>
+        <TextBlock x:Name="arg3" Text="" HorizontalAlignment="Left" Margin="827,405,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" FontSize="16" Foreground="#FFACACAC"/>
+        <StackPanel>
+            <TextBox x:Name="ArgumentsTextBox" TextWrapping="Wrap" Margin="10,405,365.714,289" FontSize="16" Background="#FF4B4B4B" Foreground="#FFA3A3A3" BorderBrush="#FF4B4B4B"/>
+        </StackPanel>
+    </Grid>
+</Page>
