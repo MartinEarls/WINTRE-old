@@ -11,7 +11,7 @@ found for any given C++ technique.
 -Microsoft Word is used for the reporting features, please make sure Microsoft Office is installed if you wish to utilise the reporting feature.
 
 USAGE INTRUCTIONS:
-Please refer to the User Manual for usage instructions.
+Please refer to the User Manual for usage instructions. Be advised this tool may cause anti-virus alerts.
 
 DISCLAIMER:
 You are responsible for what you do with this tool, it should only be used to perform authorized testing for which you have explicit permission to do so.
