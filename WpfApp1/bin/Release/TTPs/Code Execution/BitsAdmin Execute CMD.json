@@ -1,0 +1,14 @@
+{
+  "name": "BitsAdmin Execute CMD",
+  "ID": "T1218",
+  "elevated": "No",
+  "tactic": "Code Execution",
+  "template": "CMD",
+  "commands": "bitsadmin /create 1 & bitsadmin /addfile 1 c:\\\\windows\\\\system32\\\\cmd.exe C:\\\\WINTRE\\\\\" +\r\n    \"cmd.exe & bitsadmin /SetNotifyCmdLine 1 C:\\\\Windows\\\\System32\\\\cmd.exe NULL & bitsa\" +\r\n    \"dmin /RESUME 1 & bitsadmin /Reset",
+  "desc": "BitsAdmin job that will copy cmd.exe and attempt to execute it.",
+  "hasArgs": "false",
+  "arg1": "N/A",
+  "arg2": "N/A",
+  "arg3": "N/A",
+  "isCPP": "false"
+}

@@ -1,0 +1,13 @@
+{
+  "Title": "Assumed Breach",
+  "Description": "test",
+  "Tactics": [
+    "Discovery",
+    "Code Execution"
+  ],
+  "Techniques": [
+    "Get Registered AV",
+    "BitsAdmin Execute CMD",
+    "PowerShell Run Exe"
+  ]
+}

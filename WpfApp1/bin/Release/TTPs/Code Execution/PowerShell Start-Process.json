@@ -1,0 +1,14 @@
+{
+  "name": "PowerShell -Command Start-Process",
+  "ID": "T1059.001",
+  "elevated": "No",
+  "tactic": "Code Execution",
+  "template": "PowerShell",
+  "commands": "Start-Process -FilePath \\'.\\\\Inputs\\\\Code Execution\\\\Example.exe\\'",
+  "desc": "Uses the Start-Process cmdlet (via -command) to launch an executable.",
+  "hasArgs": "false",
+  "arg1": "N/A",
+  "arg2": "N/A",
+  "arg3": "N/A",
+  "isCPP": "false"
+}

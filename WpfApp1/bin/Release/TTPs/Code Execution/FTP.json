@@ -1,0 +1,14 @@
+{
+  "name": "FTP",
+  "ID": "T1218",
+  "elevated": "No",
+  "tactic": "Code Execution",
+  "template": "CMD",
+  "commands": "echo !calc.exe > ftpcommands.txt && ftp -s:ftpcommands.txt",
+  "desc": "Ftp.exe can be used to run shell commands from a text file.",
+  "hasArgs": "false",
+  "arg1": "N/A",
+  "arg2": "N/A",
+  "arg3": "N/A",
+  "isCPP": "false"
+}

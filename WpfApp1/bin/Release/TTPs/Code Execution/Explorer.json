@@ -1,0 +1,14 @@
+{
+  "name": "Explorer",
+  "ID": "T1218",
+  "elevated": "No",
+  "tactic": "Code Execution",
+  "template": "CMD",
+  "commands": "nul",
+  "desc": "Performs execution of specified file with explorer parent process breaking the process tree, can be used for defense evasion.",
+  "hasArgs": "false",
+  "arg1": "N/A",
+  "arg2": "N/A",
+  "arg3": "N/A",
+  "isCPP": "false"
+}

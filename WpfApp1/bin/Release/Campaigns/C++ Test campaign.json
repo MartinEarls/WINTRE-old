@@ -1,0 +1,10 @@
+{
+  "Title": "C++ Test campaign",
+  "Description": "testing C++ technique (win API cred theft)",
+  "Tactics": [
+    "Credential Theft"
+  ],
+  "Techniques": [
+    "WinAPI Credential Prompt"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Title": "Code Execution testing",
+  "Description": "testing testing testing testing testing testing",
+  "Tactics": [
+    "Code Execution"
+  ],
+  "Techniques": [
+    "Explorer",
+    "FTP",
+    "PowerShell Run Exe",
+    "Scheduled Task",
+    "WMIC"
+  ]
+}

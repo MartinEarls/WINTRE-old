@@ -1,0 +1,14 @@
+{
+  "name": "Ransomware",
+  "ID": "T1486",
+  "elevated": "No",
+  "tactic": "Impact",
+  "template": "N/A",
+  "commands": "N/A",
+  "desc": "This is ransomware...be careful! This sample will encrypt any .doc, .docx, .txt, and .pdf files it comes across in the user's Desktop.",
+  "hasArgs": "false",
+  "arg1": "N/A",
+  "arg2": "N/A",
+  "arg3": "N/A",
+  "isCPP": "false"
+}

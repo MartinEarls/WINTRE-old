@@ -1,0 +1,10 @@
+{
+  "Title": "test55",
+  "Description": "test",
+  "Tactics": [
+    "Code Execution"
+  ],
+  "Techniques": [
+    "C# Run Exe"
+  ]
+}

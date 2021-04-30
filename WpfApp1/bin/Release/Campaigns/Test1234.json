@@ -1,0 +1,15 @@
+{
+  "Title": "Test1234",
+  "Description": "123",
+  "Tactics": [
+    "Discovery",
+    "Code Execution"
+  ],
+  "Techniques": [
+    "Get Defender Exclusion Paths PS",
+    "Process Discovery",
+    "Security Software Discovery",
+    "User Discovery",
+    "PowerShell Start-Process"
+  ]
+}

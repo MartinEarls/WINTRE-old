@@ -1,0 +1,14 @@
+{
+  "name": "PowerShell Curl",
+  "ID": "T1105",
+  "elevated": "No",
+  "tactic": "Command and Control",
+  "template": "CMD",
+  "commands": "N/A",
+  "desc": "Curl in PowerShell can be used as a downloader.",
+  "hasArgs": "true",
+  "arg1": "URL",
+  "arg2": "N/A",
+  "arg3": "N/A",
+  "isCPP": "false"
+}

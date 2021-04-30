@@ -1,0 +1,14 @@
+{
+  "name": "Admin User",
+  "ID": "T1136.001",
+  "elevated": "Yes",
+  "tactic": "Persistence",
+  "template": "CMD",
+  "commands": "N/A",
+  "desc": "Adds a user who is a member of the local administrators group."
+  "hasArgs": "false",
+  "arg1": "N/A",
+  "arg2": "N/A",
+  "arg3": "N/A",
+  "isCPP": "false"
+}

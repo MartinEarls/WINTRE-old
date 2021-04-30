@@ -1,0 +1,10 @@
+{
+  "Title": "Test2",
+  "Description": "Test",
+  "Tactics": [
+    "Command and Control"
+  ],
+  "Techniques": [
+    "Cert Util Download"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "RunDLL32",
+  "ID": "T1059.001",
+  "elevated": "No",
+  "tactic": "Code Execution",
+  "template": "N/A",
+  "commands": "",
+  "desc": "Uses rundll32.exe to execute an exported function from a DLL. As this is a signed binary it is a popular technique for achieving code execution and possibly evading defences.",
+  "hasArgs": "true",
+  "arg1": "N/A",
+  "arg2": "N/A",
+  "arg3": "N/A",
+  "isCPP": "false"
+}

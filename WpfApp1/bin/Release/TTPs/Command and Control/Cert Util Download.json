@@ -1,0 +1,14 @@
+{
+  "name": "Cert Util Download File",
+  "ID": "T1105",
+  "elevated": "No",
+  "tactic": "Command and Control",
+  "template": "CMD",
+  "commands": "N/A",
+  "desc": "CertUtil.exe can be abused and used to download additional payloads from the internet. This test downloads a test file as a PoC but can also take a user defined URL of a target file to download.",
+  "hasArgs": "true",
+  "arg1": "URL",
+  "arg2": "",
+  "arg3": "N/A",
+  "isCPP": "false"
+}

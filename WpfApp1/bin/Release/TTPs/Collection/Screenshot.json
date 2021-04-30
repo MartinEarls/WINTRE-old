@@ -1,0 +1,14 @@
+{
+  "name": "Screenshot",
+  "ID": "T1113",
+  "elevated": "No",
+  "tactic": "Collection",
+  "template": "N/A",
+  "commands": "N/A",
+  "desc": "Adversaries may attempt to take screen captures of the desktop to gather information over the course of an operation.",
+  "hasArgs": "false",
+  "arg1": "N/A",
+  "arg2": "N/A",
+  "arg3": "N/A",
+  "isCPP": "false"
+}

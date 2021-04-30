@@ -1,0 +1,13 @@
+{
+  "Title": "Test",
+  "Description": "Test",
+  "Tactics": [
+    "Code Execution",
+    "Discovery"
+  ],
+  "Techniques": [
+    "C# Run Exe",
+    "Local Account Discovery",
+    "Process Discovery"
+  ]
+}

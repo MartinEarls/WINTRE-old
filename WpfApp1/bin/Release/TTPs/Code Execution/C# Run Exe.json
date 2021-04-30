@@ -1,0 +1,14 @@
+{
+  "name": "C# Run Exe",
+  "ID": "T1059.001",
+  "elevated": "No",
+  "tactic": "Code Execution",
+  "template": "PowerShell",
+  "commands": "",
+  "desc": "Utilises Windows APIs to launch an executable from C#.",
+  "hasArgs": "false",
+  "arg1": "N/A",
+  "arg2": "N/A",
+  "arg3": "N/A",
+  "isCPP": "false"
+}

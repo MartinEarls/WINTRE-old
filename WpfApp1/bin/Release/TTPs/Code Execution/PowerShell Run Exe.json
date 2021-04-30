@@ -1,0 +1,14 @@
+{
+  "name": "PowerShell Run Exe",
+  "ID": "T1059.001",
+  "elevated": "No",
+  "tactic": "Code Execution",
+  "template": "PowerShell",
+  "commands": "& \\\".\\\\Inputs\\\\Code Execution\\\\Example.exe\\\"",
+  "desc": "PowerShell is a popular method of achieving code execution. This test simply runs an arbitrary executable.",
+  "hasArgs": "false",
+  "arg1": "N/A",
+  "arg2": "N/A",
+  "arg3": "N/A",
+  "isCPP": "false"
+}

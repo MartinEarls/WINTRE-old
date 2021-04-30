@@ -1,0 +1,14 @@
+{
+  "name": "Get Clipboard",
+  "ID": "T1115",
+  "elevated": "No",
+  "tactic": "Collection",
+  "template": "N/A",
+  "commands": "N/A",
+  "desc": "Adversaries may collect data stored in the clipboard from users copying information within or between applications. This technique repeatedly copies the clipboard's contents for 10 seconds before exiting.",
+  "hasArgs": "false",
+  "arg1": "N/A",
+  "arg2": "N/A",
+  "arg3": "N/A",
+  "isCPP": "false"
+}

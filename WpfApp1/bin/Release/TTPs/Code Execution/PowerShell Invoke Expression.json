@@ -1,0 +1,14 @@
+{
+  "name": "PowerShell Invoke Expression",
+  "ID": "T1059.001",
+  "elevated": "No",
+  "tactic": "Code Execution",
+  "template": "PowerShell",
+  "commands": "",
+  "desc": "Uses PowerShell cmdlet Invoke-Expression to achieve code execution.",
+  "hasArgs": "false",
+  "arg1": "N/A",
+  "arg2": "N/A",
+  "arg3": "N/A",
+  "isCPP": "false"
+}

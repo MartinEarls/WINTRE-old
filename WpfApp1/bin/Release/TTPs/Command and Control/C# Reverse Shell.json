@@ -1,0 +1,14 @@
+{
+  "name": "C# Reverse Shell",
+  "ID": "T1095",
+  "elevated": "No",
+  "tactic": "Command and Control",
+  "template": "CMD",
+  "commands": "N/A",
+  "desc": "Establish a TCP reverse shell connection using streams to a remote server. Use Netcat to setup a listener and enter the relevant IP and Port as arguments.",
+  "hasArgs": "true",
+  "arg1": "IP Address",
+  "arg2": "Port",
+  "arg3": "N/A",
+  "isCPP": "false"
+}

@@ -1,0 +1,1 @@
+!cmd /c "C:\Users\Martin\source\repos\WpfApp1\WpfApp1\bin\Release\Inputs\CODEEX~1\Example.exe"  

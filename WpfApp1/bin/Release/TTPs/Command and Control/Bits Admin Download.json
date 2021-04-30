@@ -1,0 +1,14 @@
+{
+  "name": "Bits Admin",
+  "ID": "T1105",
+  "elevated": "No",
+  "tactic": "Command and Control",
+  "template": "CMD",
+  "commands": "bitsadmin /transfer safedownload /download /priority normal https://live.sysinter\" +\r\n    \"nals.com/eula.txt \\\".\\\\Outputs\\\\Command and Control\\\\BitsAdmin.txt\\\"",
+  "desc": "BitsAdmin can be used as a downloader...",
+  "hasArgs": "false",
+  "arg1": "N/A",
+  "arg2": "N/A",
+  "arg3": "N/A",
+  "isCPP": "false"
+}

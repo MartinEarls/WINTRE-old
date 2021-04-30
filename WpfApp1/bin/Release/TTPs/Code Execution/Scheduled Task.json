@@ -1,0 +1,14 @@
+{
+  "name": "Scheduled Task",
+  "ID": "T1053",
+  "elevated": "No",
+  "tactic": "Code Execution",
+  "template": "CMD",
+  "commands": "SCHTASKS /Create /SC ONCE /TN spawn /TR \\\"Example.exe\\\" /ST 20:10",
+  "desc": "This test uses a scheduled task to achieve code execution. The task will launch in the next minute.",
+  "hasArgs": "false",
+  "arg1": "N/A",
+  "arg2": "N/A",
+  "arg3": "N/A",
+  "isCPP": "false"
+}

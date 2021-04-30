@@ -1,0 +1,10 @@
+{
+  "Title": "123",
+  "Description": "1234",
+  "Tactics": [
+    "Credential Theft"
+  ],
+  "Techniques": [
+    "SAM SYSTEM Reg exe"
+  ]
+}
