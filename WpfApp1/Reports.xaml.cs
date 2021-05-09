@@ -70,7 +70,7 @@ namespace WpfApp1
                 string[] jsonFiles = Directory.GetFiles(Directory.GetCurrentDirectory() + "\\Reports\\", "*.json");
 
                 //If less than 2 .json files => no techniques have been ran don't run this
-                if (!(jsonFiles.Length < 2) && refresh == false) //likely have to change null cus user could switch between pages resetting prematurely
+                if (!(jsonFiles.Length < 2) && refresh == false) 
                 {
                     LoadReportIntoView(refresh);
                     refresh = true;
@@ -108,7 +108,7 @@ namespace WpfApp1
             string[] docFiles = Directory.GetFiles(Directory.GetCurrentDirectory() + "\\Reports\\", "*.docx");
 
             //Should be one file
-            DocPreview.Document = report.ConvertWordDocToXPSDoc(docFiles[0], docFiles[0].Replace(".docx", ".xps")).GetFixedDocumentSequence();
+            DocPreview.Document = report.ConvertWordDocToXPSDoc(docFiles[docFiles.Length-1], docFiles[docFiles.Length-1].Replace(".docx", ".xps")).GetFixedDocumentSequence();
             if(refresh)
             {
                 MessageBox.Show("Report updated in document viewer.", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
